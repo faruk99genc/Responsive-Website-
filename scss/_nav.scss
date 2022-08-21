@@ -1,0 +1,48 @@
+.wrapper {
+    display: grid;
+    gap: 20px;
+
+    .main-nav {
+        ul {
+            display: grid;
+            gap: 20px;
+            padding: 0;
+            list-style: none;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+        a {
+            background: $primaryBtn;
+            display: block;
+            text-decoration: none;
+            padding: 0.8rem;
+            text-align: center;
+            color: $primaryDark;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            box-shadow: $primaryShadow;
+            &:hover {
+                background: $primaryDark;
+                color: $primaryLight;
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .wrapper {
+        
+        .main-nav {
+            ul {
+                display: block;
+            }
+        
+            //a {}
+
+        }
+    }
+}

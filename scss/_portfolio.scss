@@ -1,0 +1,22 @@
+.portfolio{
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+
+    img {
+        width: 100%;
+        box-shadow: $primaryShadow;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .portfolio{
+        display:inline-block;
+    
+        img {
+            box-shadow: $primaryShadow;
+        }
+    }
+}

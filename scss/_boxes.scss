@@ -1,0 +1,22 @@
+.boxes {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    .box {
+        background: $primaryBtn;
+        text-align: center;
+        padding: 1.5rem 2rem;
+        box-shadow: $primaryShadow;
+    }
+}
+
+@media only screen and (min-width: 753px) and (max-width: 975px) {
+    .boxes {
+        grid-template-columns: 1fr 1fr;
+    
+        //.box {}
+    }
+}

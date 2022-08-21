@@ -1,0 +1,144 @@
+.top-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        "showcase showcase top-box-a"
+        "showcase showcase top-box-b";
+
+    .showcase {
+        grid-area: showcase;
+        min-height: 400px;
+        background: url(/img/showcase.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        box-shadow: $primaryShadow;
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: $primaryLight;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: $primaryLight;
+        }
+
+    }
+
+    .top-box {
+        background: $primaryBtn;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $primaryShadow;
+        padding: 1.5rem;
+
+        //h4 {}
+
+        .price {
+            font-size: 2.5rem;
+        }
+        
+        a {
+            padding-left: 2.9rem;
+        }
+    }
+
+    .top-box-a {
+        grid-area: top-box-a;
+    }
+    
+    .top-box-b {
+        grid-area: top-box-b;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .top-container {
+        display: block;
+
+        .showcase {
+            background-position:bottom;
+            padding: 1rem 1rem 2rem 1rem;
+            justify-content: center;
+    
+            h1 {
+                margin-top: 0;
+                font-size: 2.3rem;
+            }
+    
+            p {
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+            }
+    
+        }
+    
+        .top-box {
+            margin-top: 1rem;
+    
+            h4 {
+                font-size: x-large;
+                margin-bottom: 0rem;
+            }
+    
+            //.price {}
+            
+            //a {}
+        }
+    
+        //.top-box-a {}
+        
+        //.top-box-b {}
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1030px) {
+    .top-container {
+    
+        .showcase {
+
+            
+    
+            h1 {
+                font-size: 2.5rem;
+            }
+    
+            //p {}
+    
+        }
+    
+        .top-box {
+            background: $primaryBtn;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            box-shadow: $primaryShadow;
+            padding: 1.5rem;
+    
+            //h4 {}
+    
+            .price {
+                font-size: 2.5rem;
+            }
+            
+            a {
+                padding-left: 2.9rem;
+            }
+        }
+    
+        .top-box-a {
+            grid-area: top-box-a;
+        }
+        
+        .top-box-b {
+            grid-area: top-box-b;
+        }
+    }
+}
